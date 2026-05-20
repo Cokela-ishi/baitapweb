@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cart</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <section id="header">
+
+        <!-- Logo -->
+        <a href="#">
+            <img src="/img/Fender_guitars_logo 1.svg" class="logo" alt="logo">
+        </a>
+
+        <!-- Navbar -->
+        <div>
+           <ul id="navbar">
+
+    <li>
+        <a class="active" href="index.html">
+            HOME
+        </a>
+    </li>
+
+    <li class="dropdown">
+
+        <a href="Product.html">
+            PRODUCT
+        </a>
+
+        <ul class="submenu">
+
+            <li>
+                <a href="ELECTRIC_GUITAR.html">
+                    Electric Guitar
+                </a>
+            </li>
+
+            <li>
+                <a href="BASS_GUITAR.html">
+                    Bass Guitar
+                </a>
+            </li>
+
+        </ul>
+
+    </li>
+
+    <li>
+        <a href="blog.html">BLOG</a>
+    </li>
+
+    <li>
+        <a href="about.html">ABOUT US</a>
+    </li>
+    <li>
+        <a href="baithuchanh.html">BAI THUC HANH</a>
+    </li>
+<li>
+    <a href="account.html">
+        <i class="fa-regular fa-user"></i>
+    </a>
+</li>
+
+<li>
+    <a href="cart.html">
+        <i class="fa-solid fa-bag-shopping"></i>
+    </a>
+</li>
+</ul>
+        </div>
+
+    </section>
+
+<section id="cart-page">
+
+    <h1>Your Cart</h1>
+
+    <div id="cart-items"></div>
+
+    <div class="cart-total">
+        <h2 id="total-price">Total: 0 vnđ</h2>
+    </div>
+
+</section>
+
+<script>
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+const cartItems = document.getElementById("cart-items");
+
+const totalPrice = document.getElementById("total-price");
+
+let total = 0;
+
+cart.forEach((item, index) => {
+
+    total += item.price * item.quantity;
+
+    cartItems.innerHTML += `
+
+        <div class="cart-box">
+
+            <img src="${item.image}">
+
+            <div>
+
+                <h3>${item.name}</h3>
+
+                <p>${item.price.toLocaleString()} vnđ</p>
+
+            </div>
+
+            <button onclick="removeItem(${index})">
+                Remove
+            </button>
+
+        </div>
+
+    `;
+
+});
+
+totalPrice.innerText =
+"Total: " + total.toLocaleString() + " vnđ";
+
+function removeItem(index){
+
+    cart.splice(index,1);
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    location.reload();
+
+}
+
+</script>
+
+</body>
+</html>

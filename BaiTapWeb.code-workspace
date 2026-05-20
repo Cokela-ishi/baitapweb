@@ -1,0 +1,34 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Lab01/Lab01"
+		},
+		{
+			"path": "../Lab02"
+		},
+		{
+			"path": "../Lab03"
+		},
+		{
+			"path": "../Lab04"
+		},
+		{
+			"path": "../Lab05"
+		},
+		{
+			"path": "../Lab06"
+		},
+		{
+			"path": "../Lab07"
+		},
+		{
+			"path": "../Lab08"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "BaiTapWeb"
+	}
+}
