@@ -116,7 +116,7 @@ body{
     position: relative;
 }
 #hero {
-    background-image: url("img/Pic_1.svg");
+    background-image: url("Img/Pic_1.svg");
     height: 90vh;
     width: 100%;
     background-position: top 25% right 0;
@@ -171,7 +171,7 @@ body{
     line-height: 110px;
 }
 #banner-2{
-    background-image: url("img/Pic_2.svg");
+    background-image: url("Img/Pic_2.svg");
 
     height: 80vh;
     width: 100%;
@@ -358,7 +358,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("/img/Pic_P1.jpg");
+    background-image: url("/Img/Pic_P1.jpg");
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -470,7 +470,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("/img/Pic_Product_1.svg");
+    background-image: url("/Img/Pic_Product_1.svg");
     width: 100%;
     height: 50vh;
     background-size: cover;
@@ -563,7 +563,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("/img/Pic_Product_2.svg");
+    background-image: url("/Img/Pic_Product_2.svg");
     width: 100%;
     height: 50vh;
     background-size: cover;
@@ -727,7 +727,7 @@ font-style: oblique;
 }
 /* BLOG HERO */
 #blog-hero{
-    background-image: url("img/blog-banner.jpg");
+    background-image: url("Img/blog-banner.jpg");
 
     width: 100%;
     height: 45vh;
@@ -851,7 +851,7 @@ font-style: oblique;
 #about-hero{
     position: relative;
 
-    background-image: url("img/about-bg.jpg");
+    background-image: url("Img/about-bg.jpg");
 
     width: 100%;
     height: 90vh;
@@ -1030,7 +1030,7 @@ font-style: oblique;
 
 /* BANNER */
 #about-banner{
-    background-image: url("img/about-banner.jpg");
+    background-image: url("Img/about-banner.jpg");
 
     width: 100%;
     height: 50vh;
